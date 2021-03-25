@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+  <link href="/css/estilo.css" rel="stylesheet"/>
+  <title>Document</title>
+</head>
+<body>
+  
+  <div class="container">
+    <form>
+      <div class="card mgTopRow">
+        <h5 class="card-header fundo">Formulario Produto</h5>
+        <div class="card-body">
+          <div class="row">
+             <div class="col-md-4 col-sm-12">
+                <label for="descricaoProduto" class="form-label">Descrição</label>
+                <input type="text" class="form-control" id="descricaoProduto" placeholder="Descrição do Produto"/>
+             </div>
+             <div class="col-md-4 col-sm-12">
+               <label for="quantidadeProduto" class="form-label">Quantidade</label>
+               <input type="number" class="form-control" id="quantidadeProduto" placeholder="Quantidade do mesmo Produto"/>
+             </div>
+             <div class="col-md-4 col-sm-12">
+               <label for="valorProduto" class="form-label">Valor</label>
+               <input type="number" class="form-control" id="valorProuto" placeholder="R$ 00.00"/>
+             </div>
+          </div>
+          <div class="row mgTopRow">
+              <div class="col-md-3 col-sm-12">
+                <label for="tipoDePagamento" class="form-label">Tipo de pagamento</label>
+                <select id="tipoDePagamento" class="form-control">
+                  <option>A vista</option>
+                  <option>Cartão de Credito</option>
+                  <option>Boleto</option>
+                </select>
+              </div>
+              <div class="col-md-3 col-sm-12">
+                <label for="numeroDoCartão" class="form-label">Numero do Cartão</label>
+                <input type="value" class="form-control" id="numeroDoCartão" placeholder="0000.0000.0000.0000"/>
+              </div>
+              <div class="col-md-3 col-sm-12">
+                <label for="nomeTitular" class="form-label">Nome do Titular</label>
+                <input type="value" class="form-control" id="nomeTitular" placeholder="Fulano Cicrano "/>
+              </div>
+              <div class="col-md-3 col-sm-12">
+                <label for="dataDeVencimento" class="form-label">Data de Vencimento</label>
+                <input type="date" class="form-control" id="dataDeExpedicao"/>
+              </div>
+              <div class="col-md-3 col-sm-12">
+                <label for="CVV" class="form-label">CVV</label>
+                <input type="number" class="form-control" id="CVV" placeholder="000"/>
+              </div>
+          </div>
+        </div>
+        <div class="card-footer">
+          <div class="row">
+            <div class="col-md-10 col-sm-12">
+              <a href="index.html" class="btn botao-voltar">Voltar</a>
+               
+            </div>
+            <div class="col-md-2 col-sm-12 text-end">
+              <input type="submit" class="btn btn-success" value="Gravar" id="btnGravar" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>
+      
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+</body>
+</html>

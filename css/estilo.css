@@ -1,0 +1,16 @@
+body{
+  background-color: #e0dede;
+ 
+}
+.mgTopRow{
+  margin-top: 10px;
+}
+.fundo{
+  background-color: indigo;
+  color: white;
+  text-align: center;
+}
+.botao-voltar{
+  background-color: indigo;
+  color: white;
+}
