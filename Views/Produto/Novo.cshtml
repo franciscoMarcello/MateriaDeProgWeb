@@ -1,0 +1,52 @@
+@model WebApp.Models.ProdutoViewModel
+
+<h1>Cadastro de Conteudo</h1>
+
+<form asp-action="Novo">
+    <div class="card">
+        <div class="card-header">Informações sobre Conteudo</div>
+        <div class="card-body">
+            <div class="row">
+                <div class="col-md-12 col-sm-12">
+                    <label asp-for="Descricao"></label>
+                    <input type="text" asp-for="Descricao" class="form-control" />
+                    <span asp-validation-for="Descricao" class="text-danger"></span>
+                </div>
+    
+            </div>
+            <div class="row">
+                <div class="col-md-12 col-sm-12">
+                    <label asp-for="Valor"></label>
+                    <input type="text" asp-for="Valor" class="form-control" />
+                    <span asp-validation-for="Valor" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 col-sm-12">
+                    <label asp-for="Tipo"></label>
+                    <input type="Text" asp-for="Tipo" class="form-control" />
+                </div>
+                
+        </div>
+        <div class="card-footer">
+            <div class="row">
+                <div class="col-md-2">
+                    <input type="submit" value="Gravar" class="btn btn-success" />
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+
+<hr />
+
+<div class="row">
+    <div class="col-md-2">
+        <a class="btn btn-dark" asp-controller="Conteudo" asp-action="Index">Voltar</a>
+    </div>
+</div>
+
+@section Scripts {
+    <script src="~/lib/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+}
