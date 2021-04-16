@@ -25,8 +25,6 @@
 /mnt/HD/AulaDeProgramacaoWeb/TrabalhoParcial/obj/Debug/net5.0/TrabalhoParcial.RazorCoreGenerate.cache
 /mnt/HD/AulaDeProgramacaoWeb/TrabalhoParcial/obj/Debug/net5.0/Razor/Views/Cliente/Index.cshtml.g.cs
 /mnt/HD/AulaDeProgramacaoWeb/TrabalhoParcial/obj/Debug/net5.0/Razor/Views/Cliente/Novo.cshtml.g.cs
-/mnt/HD/AulaDeProgramacaoWeb/TrabalhoParcial/obj/Debug/net5.0/Razor/Views/Conteudo/Index.cshtml.g.cs
-/mnt/HD/AulaDeProgramacaoWeb/TrabalhoParcial/obj/Debug/net5.0/Razor/Views/Conteudo/Novo.cshtml.g.cs
 /mnt/HD/AulaDeProgramacaoWeb/TrabalhoParcial/obj/Debug/net5.0/Razor/Views/Home/Index.cshtml.g.cs
 /mnt/HD/AulaDeProgramacaoWeb/TrabalhoParcial/obj/Debug/net5.0/Razor/Views/Home/Privacy.cshtml.g.cs
 /mnt/HD/AulaDeProgramacaoWeb/TrabalhoParcial/obj/Debug/net5.0/Razor/Views/Shared/Error.cshtml.g.cs

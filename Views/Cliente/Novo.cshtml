@@ -24,25 +24,41 @@
             </div>
             <div class="row">
                 <div class="col-md-6 col-sm-12">
-                    <label asp-for="DataDeNascimento"></label>
-                    <input type="date" asp-for="DataDeNascimento" class="form-control" />
-                    <span asp-validation-for="DataDeNascimento" class="text-danger"></span>
+                    <label asp-for="cpf"></label>
+                    <input type="number" asp-for="cpf" class="form-control" />
+                    <span asp-validation-for="cpf" class="text-danger"></span>
                 </div>
-                <div class="col-md-6 col-sm-12">
-                    <label asp-for="Email"></label>
-                    <input type="text" asp-for="Email" class="form-control" />
-                    <span asp-validation-for="Email" class="text-danger"></span>
-                </div>
-            </div>
-            <div class="row">
                 <div class="col-md-6 col-sm-12">
                     <label asp-for="Telefone"></label>
-                    <input type="text" asp-for="Telefone" class="form-control" />
+                    <input type="tel" asp-for="Telefone" class="form-control" />
+                     <span asp-validation-for="Telefone" class="text-danger"></span>
                 </div>
-                <div class="col-md-6 col-sm-12">
+                </div>
+            <div class="row ">
+                <div class="col-md-4 col-sm-12 ">
+                    <label asp-for="CEP"></label>
+                    <input type="number" asp-for="CEP" class="form-control" />
+             
+                </div>
+                <div class="col-md-4 col-sm-12">
+                    <label asp-for="Bairro"></label>
+                    <input type="text" asp-for="Bairro" class="form-control" />
+                   
+                    </div>
+                <div class="col-md-4 col-sm-12">
+                    <label asp-for="Numero"></label>
+                    <input type="number" asp-for="Numero" class="form-control" />
+                
+                </div>
+                
+            </div>
+            <div class="row ">
+                
+                <div class="col-md-12 col-sm-12">
                     <label asp-for="Endereco"></label>
                     <input type="text" asp-for="Endereco" class="form-control" />
                 </div>
+                
             </div>
         </div>
         <div class="card-footer">

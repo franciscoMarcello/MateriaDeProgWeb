@@ -12,18 +12,21 @@ namespace WebApp.Models
         [Required(ErrorMessage ="O campo Nome é obrigatório")]
         [StringLength(100, ErrorMessage = "O nome precisa ter no mínimo 5 letras",MinimumLength = 5)]
         public string Nome { get; set; }
+        [Required(ErrorMessage ="O campo CPF é obrigatório")]
+        [DisplayName("CPF")]
+        public int cpf {get;set;}
 
         public string Sexo { get; set; }
+        
+        [DisplayName("Número")]
+        public int Numero { get; set; }
 
-        [DisplayName("Data de Nascimento")]
-        [Required(ErrorMessage = "O campo Data de Nascimento é obrigatório")]
-        public DateTime DataDeNascimento { get; set; }
+        [StringLength(7, ErrorMessage = "O CEP precisa ter no mínimo 7 números", MinimumLength=7)]
+        public int CEP {get;set;}
 
-        [DisplayName("E-Mail")]
-        [Required(ErrorMessage = "O campo e-Mail é obrigatório")]
-        [EmailAddress(ErrorMessage = "Email está em um formato incorreto!")]
-        public string Email { get; set; }
-
+   
+        public string Bairro { get; set; }
+        [Required(ErrorMessage ="O campo telefone é obrigatório")]
         public string Telefone { get; set; }
 
         [DisplayName("Endereço")]

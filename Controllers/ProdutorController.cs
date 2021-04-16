@@ -19,7 +19,7 @@ namespace WebApp.Controllers
         }
 
         [HttpPost]
-        public IActionResult Novo(ConteudoViewModel model)
+        public IActionResult Novo(ProdutoViewModel model)
         {
             if(ModelState.IsValid)
             {

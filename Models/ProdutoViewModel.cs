@@ -8,14 +8,22 @@ namespace WebApp.Models
 {
     public class ProdutoViewModel
     { 
-        [DisplayName("Descrição:")]
-        [Required(ErrorMessage ="O campo Nome é obrigatório")]
+        [DisplayName("Preço")]
+        [Required(ErrorMessage ="O campo Preço é obrigatório")]
+        public decimal Preco { get; set; }
+        
+        [DisplayName("Descrição")]
+        [Required(ErrorMessage ="O campo descrição é obrigatório")]
         public string Descricao { get; set; }
-        [DisplayName("Valor:")]
-        [Required(ErrorMessage ="O campo Nome é obrigatório")]
-        public decimal Valor { get; set; }
-        [DisplayName("Tipo:")]
-        [Required(ErrorMessage ="O campo Nome é obrigatório")]
-        public string Tipo { get; set; }
+        
+        [Required(ErrorMessage ="O campo categoria é obrigatório")]
+        public string Categoria { get; set; }
+        [DisplayName("Codigo do produto")]
+        [Required(ErrorMessage ="O campo codigo do produto é obrigatório")]
+        public int codigoDoProduto { get; set; }
+
+        [DisplayName("Obeservação")]
+        [Required(ErrorMessage ="O campo obeservação é obrigatório")]
+        public string Observacao { get; set; }
     }
 }
