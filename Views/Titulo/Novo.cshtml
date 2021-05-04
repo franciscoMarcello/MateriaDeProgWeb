@@ -1,0 +1,58 @@
+@model WebApp.Models.TituloViewModel
+
+<h1>Cadastro de Titulo</h1>
+
+<form asp-action="Novo">
+    <div class="card">
+        <div class="card-header">Informações sobre Titulo</div>
+        <div class="card-body">
+            <div class="row">
+                <div class="col-md-6 col-sm-12">
+                    <label asp-for="NomeDoFornecedor"></label>
+                    <input type="text" asp-for="NomeDoFornecedor" class="form-control" />
+                    <span asp-validation-for="NomeDoFornecedor" class="text-danger"></span>
+                    </div>
+                <div class="col-md-6 col-sm-12">
+                    <label asp-for="CNPJ"></label>
+                    <input type="number" asp-for="CNPJ" class="form-control" />
+                    <span asp-validation-for="CNPJ" class="text-danger"></span>
+                </div>
+               
+    
+            </div>
+          
+            <div class="row">
+                <div class="col-md-12 col-sm-12">
+                    <label asp-for="ValorDoTitulo"></label>
+                    <input type="number" asp-for="ValorDoTitulo" class="form-control" />
+                    <span asp-validation-for="ValorDoTitulo" class="text-danger"></span>
+                </div>
+                  <div class="col-md-12 col-sm-12">
+                    <label asp-for="VencimentoTitulo"></label>
+                    <input type="date" asp-for="VencimentoTitulo" class="form-control" />
+                    <span asp-validation-for="VencimentoTitulo" class="text-danger"></span>
+                </div>
+                
+        </div>
+        <div class="card-footer">
+            <div class="row">
+                <div class="col-md-2">
+                    <input type="submit" value="Gravar" class="btn btn-success" />
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+
+<hr />
+
+<div class="row">
+    <div class="col-md-2">
+        <a class="btn btn-dark" asp-controller="Titulo" asp-action="Index">Voltar</a>
+    </div>
+</div>
+
+@section Scripts {
+    <script src="~/lib/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+}

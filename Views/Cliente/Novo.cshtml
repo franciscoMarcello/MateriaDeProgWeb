@@ -1,0 +1,72 @@
+﻿@model WebApp.Models.ClienteViewModel
+
+<h1>Cadastro de Clientes</h1>
+
+<form asp-action="Novo">
+    <div class="card">
+        <div class="card-header">Dados do Cliente</div>
+        <div class="card-body">
+            <div class="row">
+                <div class="col-md-6 col-sm-12">
+                    <label asp-for="Nome"></label>
+                    <input type="text" asp-for="Nome" class="form-control" />
+                    <span asp-validation-for="Nome" class="text-danger"></span>
+                </div>
+                <div class="col-md-6 col-sm-12">
+                    <label asp-for="Email"></label>
+                     <input type="text" asp-for="Email" class="form-control" />
+                    <span asp-validation-for="Email" class="text-danger"></span>
+                    
+                  
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-sm-12">
+                    <label asp-for="cpf"></label>
+                    <input type="number" asp-for="cpf" class="form-control" />
+                    <span asp-validation-for="cpf" class="text-danger"></span>
+                </div>
+                <div class="col-md-6 col-sm-12">
+                    <label asp-for="Contato"></label>
+                    <input type="tel" asp-for="Contato" class="form-control" />
+                     <span asp-validation-for="Contato" class="text-danger"></span>
+                </div>
+                </div>
+            <div class="row">
+                <div class="col-md-6 col-sm-12 ">
+                    <label asp-for="DataDeCadastro"></label>
+                    <input type="date" asp-for="DataDeCadastro" class="form-control" />
+                     <span asp-validation-for="DataDeCadastro" class="text-danger"></span>
+            </div>
+           
+                
+                <div class="col-md-6 col-sm-12">
+                    <label asp-for="Endereco"></label>
+                    <input type="text" asp-for="Endereco" class="form-control" />
+                     <span asp-validation-for="Endereco" class="text-danger"></span>
+           
+                
+            </div>
+        </div>
+        <div class="card-footer">
+            <div class="row">
+                <div class="col-md-2">
+                    <input type="submit" value="Gravar" class="btn btn-success" />
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+
+<hr />
+
+<div class="row">
+    <div class="col-md-2">
+        <a class="btn btn-dark" asp-controller="Cliente" asp-action="Index">Voltar</a>
+    </div>
+</div>
+
+@section Scripts {
+    <script src="~/lib/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+}
